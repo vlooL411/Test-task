@@ -1,0 +1,25 @@
+$contentwidth: var(--contentwidth)
+$colordis: var(--colordis)
+$colorfir: var(--colorfir)
+$back: white
+
+.form
+    width: 100%
+    display: flex
+    justify-content: center
+.formpay
+    overflow: hidden
+    width: 100%
+    max-width: $contentwidth
+    max-height: 600px
+    margin: 45px 0 20px
+    display: grid
+    grid-template-columns: 1fr minmax(300px, auto)
+    background-color: $back
+    border-radius: 5px
+@media screen and ( max-width: 700px)
+    .formpay
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr 1fr
+        max-height: 100%
+        max-width: 90%

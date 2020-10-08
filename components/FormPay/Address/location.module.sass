@@ -1,0 +1,18 @@
+$koefWidth: 1.5
+$svgHW: 20px //change below
+$right: .5em //also
+
+.location
+    display: flex
+    position: relative
+    input
+        padding-right: calc(#{$koefWidth} * #{$right} + #{$svgHW})
+    img
+        align-self: center
+        position: absolute
+        right: $right
+        width: $svgHW
+        height: $svgHW
+        cursor: pointer
+        &:hover
+            filter: brightness(250%) hue-rotate(90deg)

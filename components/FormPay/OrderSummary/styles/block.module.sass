@@ -1,0 +1,26 @@
+$colordis: var(--colordis)
+
+.block
+    display: grid
+    grid-template-columns: auto 1fr auto
+    grid-template-rows: 1fr auto auto
+    width: 100%
+    font-size: .625em
+    img
+        align-self: center
+        width: 45px
+        height: 45px
+        grid-area: 1 / 1 / 4 / 2
+        margin-right: .625em
+    &_title
+        grid-area: 1 / 2 / 2 / 3
+        color: $colordis
+        font-size: .75rem
+        margin-bottom: .58em
+    &_color
+        grid-area: 2 / 2 / 3 / 3
+    &_quantity
+        grid-area: 3 / 2 / 4 / 3
+    &_price
+        grid-area: 1 / 3 / 2 / 4
+        color: $colordis

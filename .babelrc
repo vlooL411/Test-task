@@ -1,0 +1,4 @@
+{
+  /* for jest tests */
+  "presets": ["next/babel"]
+}

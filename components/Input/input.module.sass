@@ -1,0 +1,48 @@
+$border: #DEDCDC
+
+$error: #D0021B
+$errorback: white
+$errorbox: #0000001a
+$errorborder: #dedcdcb1
+$errordown: .3em
+
+.label
+    width: 100%
+    &_body
+        position: relative
+        .input, .select
+            width: 100%
+            background: none
+            border: 1px solid $border
+            border-radius: 5px
+            padding: 11px 15px
+            margin: .31em 0
+        .select
+            margin: auto
+            & ~ .error
+                top: -.8rem
+                left: 1.7ch
+        .error
+            position: absolute
+            top: -.5rem
+            left: 1.2ch
+            min-width: 100px
+            font-size: .815em
+            color: $error
+            background: $errorback
+            border: 1px solid $errorborder
+            border-radius: 5px
+            box-shadow: 0 0 .625em 0 $errorbox
+            padding: .2rem .5rem
+            &:after
+                content: ' '
+                width: $errordown
+                height: $errordown
+                position: absolute
+                bottom: -.25em
+                left: .7em
+                transform: rotateZ(45deg)
+                background: $errorback
+                border: 1px solid $errorborder
+                border-top: none
+                border-left: none

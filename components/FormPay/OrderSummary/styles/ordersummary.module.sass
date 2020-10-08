@@ -1,0 +1,44 @@
+$color: var(--color)
+$colordis: var(--colordis)
+$colorfir: var(--colorfir)
+$back:#f2f4f7
+$bottom: #E3E3E3
+
+.summary
+    color: $color
+    background-color: $back
+    padding: 1.5rem .8rem
+    display: flex
+    flex-direction: column
+    &_title
+        color: $colorfir
+        margin-bottom: .95em
+        display: grid
+        grid-template-columns: 1fr auto
+        u
+            cursor: pointer
+            color: $colordis
+            font-size: .8em
+    hr
+        border: none
+        border-bottom: 1px solid $bottom
+        justify-self: center
+    .blocks
+        margin-bottom: .3em
+        max-height: 25em
+        overflow-y: auto
+    .count, .total
+        display: grid
+        grid-template-columns: 1fr auto
+        color: $colordis
+        span
+            font-size: .75em
+            margin-bottom: .25em
+    .total
+        color: $colorfir
+        font-weight: bold
+    .info
+        margin-top: auto
+        color: $colordis
+        text-align: right
+        font-size: .6em

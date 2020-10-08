@@ -1,0 +1,57 @@
+$color: var(--colorfir)
+$colorsec: var(--colorsec)
+$header: var(--headerback)
+$bottom: #ebb6e9
+$contentwidth: var(--contentwidth)
+
+$codeback: linear-gradient(270deg, #7E00E8 0%, #FF1876 54.17%, #BB0CB2 100%)
+$quantity: white
+$quantityback: #FF1876
+
+.header
+    width: 100%
+    display: flex
+    justify-content: center
+    min-height: 50px
+    background-color: $header
+    border-bottom: 1px solid $bottom
+    p
+        margin: 0 1em
+        color: $color
+        font-size: 1.3em
+        max-width: $contentwidth
+        width: 100%
+        display: grid
+        align-items: center
+        justify-self: center
+        grid-template-columns: auto 1fr auto
+        user-select: none
+        .code
+            display: flex
+            padding-right: 1ch
+            color: transparent
+            background: $codeback
+            background-clip: text
+            i
+                font-size: 1.3rem
+            em
+                align-self: center
+                font-size: .7em
+        .cart
+            font-size: 1em
+            color: $colorsec
+            position: relative
+            .quantity
+                color: $quantity
+                background-color: $quantityback
+                position: absolute
+                top: -.32em
+                left: calc(100% - .6em)
+                font-size: .55em
+                text-align: center
+                line-height: 0.98
+                min-width: 1em
+                min-height: 1em
+                padding: .14em
+                border: none
+                border-radius: 100%
