@@ -5,7 +5,7 @@ self.__BUILD_MANIFEST = {
     "pages\u002Findex-22d658098815e4ace427.js",
   ],
   "/_error": [
-    "pages\u002F_error-cff691ed6419045f5861.js",
+    "pages\u002Ferror-cff691ed6419045f5861.js",
   ],
   sortedPages: ["\u002F", "\u002F_app", "\u002F_error"],
 };
